@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Mulish:wght@300;400;500;700;900&display=swap');
+[dir="rtl"] {
+input,
+button,
+select,
+textarea,
+optgroup,
+div,
+option,
+body,
+nav,
+span,
+section,
+a,
+li,
+label,
+table {
+    
+    font-family: 'Cairo', sans-serif;
+}
+body{
+    direction: rtl;
+    text-align: right;
+    }
+}
