@@ -1,4 +1,4 @@
-# shopping-cart
+# Afaq-RGB
 
 ## Project setup
 ```
