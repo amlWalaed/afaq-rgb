@@ -24,8 +24,8 @@
             <span><i class="fa-solid fa-cart-plus"></i></span>
           </div>
           <div class=" p-1 mt-2">
-            <span class="text me-1 p-1">{{$t('try')}}</span>
-            <span class="text me-1 p-1">{{$t('more')}}</span>
+            <span class="text me-1 p-2">{{$t('try')}}</span>
+            <span class="text me-1 p-2">{{$t('more')}}</span>
           </div>
         </div>
         <img :src="product.thumbnail" class="card-img-top" />
