@@ -32,11 +32,11 @@
         <div class="card-body fs-6">
           <div class="main-info d-flex flex-column">
             <div class="product-name">
-              <span class="red-color">Name: </span>
+              <span class="red-color">{{$t('name')}}: </span>
               <span>{{ product.title }}</span>
             </div>
             <div class="product-brand">
-              <span class="red-color">Brand: </span>
+              <span class="red-color">{{$t('brand')}}: </span>
               <span>{{ product.brand }}</span>
             </div>
           </div>
