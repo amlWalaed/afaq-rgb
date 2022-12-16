@@ -109,13 +109,13 @@ export default {
 <style lang="scss" scoped>
 @import "./../../scss/common/varibles.scss";
 footer {
-  background-color:white !important;
+  background-color:$white-color !important;
   color: black !important;
   a {
     text-decoration: none;
     color: black;
     &:hover {
-      color: $background-color-nav;
+      color: $dark-green;
     }
   }
   .links {
@@ -137,7 +137,7 @@ footer {
   .input-group {
     overflow: hidden;
     border-radius: 10px;
-    border:1px solid $background-color-nav;
+    border:1px solid $dark-green;
     input{
       border: none;
     }
@@ -149,11 +149,11 @@ footer {
       }
       .input-group-text{
         height: 100%;
-        color: white!important;
-        background-color: $background-color-nav !important;
+        color: $white-color!important;
+        background-color: $dark-green !important;
         border-radius:0 ;
         border: none;
-        border: 1px solid $background-color-nav ;
+        border: 1px solid $dark-green ;
       }
     }
 
@@ -161,12 +161,12 @@ footer {
 
   .media{
     i{
-      color: $background-color-nav !important;
+      color: $dark-green !important;
     }
   }
   .ownership{
-    background-color: $links-collapse-color !important;
-    color: white  !important;
+    background-color: $light-green !important;
+    color: $white-color  !important;
     
   }
 }

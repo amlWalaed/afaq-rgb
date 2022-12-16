@@ -29,7 +29,7 @@
         {{ category }}
       </router-link>
     </div>
-    <div class="category">
+    <div class="category more">
       <router-link
         to="#"
         class="
@@ -66,35 +66,45 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "./../../scss/common/varibles.scss";
+@import "./../../scss/common/_varibles.scss";
 .categories {
   gap: 10px;
 }
 .category {
-  a {
+
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background: #fff;
+    width: 125px;
+    height: 125px;
+    background: $white-color;
     box-shadow: 0 0 5px 0 #aaa;
-    color: $background-color-nav !important;
-    text-decoration: none;
+    color: $dark-green !important;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    &.more {
+    background-color: rgba(
+      $color: $dark-green,
+      $alpha: 0.5
+    );
+    color: $white-color !important;
+  }
     &:hover {
-      background-color: $background-color-nav;
-      color: white !important;
+      background-color: $dark-green;
+      color: $white-color !important;
+      a{
+        color: $white-color!important;
+      }
     }
     &.active {
-      background-color: $background-color-nav;
-      color: white !important;
+      background-color: $dark-green;
+      color: $white-color !important;
     }
-  }
-  .more {
-    background-color: rgba(
-      $color: $background-color-nav,
-      $alpha: 0.5
-    ) !important;
-    color: white !important;
-  }
+    a{
+      color: $dark-green;
+      text-decoration: none;
+    }
+  
 }
 </style>

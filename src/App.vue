@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import './scss/common/varibles.scss';
+@import './scss/common/_varibles.scss';
 @import './scss/style-rtl.scss';
 
 *, *::after , *::before{
@@ -26,15 +26,13 @@ export default {
   margin: 0;
   box-sizing: border-box ;
 }
-body{
-  color: $font-color;
-}
 #app {
-  background-color: $background-color;
+  background-color: $gray-color;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  min-height:100vh;
 }
 
 

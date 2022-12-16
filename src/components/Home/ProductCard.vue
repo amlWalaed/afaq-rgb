@@ -18,15 +18,20 @@
     >
       <div class="card w-100 h-100">
         <div class="overlay">
-          <div class="icons">
+          <div class="icons p-1">
             <span><i class="fa-regular fa-heart"></i></span>
             <span><i class="fa-regular fa-eye"></i></span>
+            <span><i class="fa-solid fa-cart-plus"></i></span>
+          </div>
+          <div class=" p-1 mt-2">
+            <span class="text me-1 p-1">{{$t('try')}}</span>
+            <span class="text me-1 p-1">{{$t('more')}}</span>
           </div>
         </div>
         <img :src="product.thumbnail" class="card-img-top" />
         <div class="card-body fs-6">
           <div class="main-info d-flex flex-column">
-            <div class="product-name fs-5">
+            <div class="product-name">
               <span class="red-color">Name: </span>
               <span>{{ product.title }}</span>
             </div>
@@ -61,9 +66,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "./../../scss/common/varibles.scss";
+@import "@/scss/common/_varibles.scss";
 .products-card {
-  background-color: white;
+  background-color: $white-color;
   border-radius: $border-radius;
 
   .product {
@@ -77,12 +82,20 @@ export default {
       .overlay{
         display: none;
         .icons{
-          background-color: white;
+          background-color: $white-color;
           border-radius: 5px;
           i{
-            color: $background-color-nav;
+            cursor: pointer;
+            color: $dark-green;
             margin: 5px;
           }
+        }
+        .text{
+          cursor: pointer;
+          border-radius: $border-radius;
+          background-color: $white-color ;
+          color:$dark-green;
+
         }
       }
       &:hover {
@@ -95,6 +108,7 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
+          flex-direction: column;
           background-color: rgba($color: #000000, $alpha: 0.5);
           z-index: 9;
         }

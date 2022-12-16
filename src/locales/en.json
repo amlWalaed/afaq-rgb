@@ -19,5 +19,7 @@
     "search":"search",
     "branches":"Branches",
     "more":"More",
-    "each-page":"Each Page"
+    "each-page":"Each Page",
+    "page-not-found-404":"Page Not Found 404" ,
+    "try":"Try" 
 }

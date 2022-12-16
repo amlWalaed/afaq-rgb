@@ -13,7 +13,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import "./../scss/common/varibles.scss";
+@import "./../scss/common/_varibles.scss";
 @mixin animation($delay){
     animation: loading 1s linear #{$delay}s infinite alternate;
 }
@@ -32,7 +32,7 @@ export default {
         margin: 5px;
         border-radius: 50% ;
         display: inline-block;
-        background-color: $background-color-nav;
+        background-color: $dark-green;
         position: relative;
         &:nth-child(1){
             @include animation(0) ;

@@ -44,9 +44,9 @@
 </template>
 
 <script>
-import Carousel from "@/components/carousel.vue";
+import Carousel from "@/components/Carousel";
 import Advertisement from "@/components/Advertisement.vue";
-import Products from "@/components/Products/Products.vue";
+import Products from "@/components/Home/ProductListing";
 import Loading from "@/components/Loading.vue";
 import {mapGetters} from 'vuex'
 export default {

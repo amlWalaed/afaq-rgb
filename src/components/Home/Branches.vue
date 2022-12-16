@@ -23,24 +23,20 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import './../../scss/common/varibles.scss';
+@import './../../scss/common/_varibles.scss';
 .dropdown{
     button{
-        background-color: $background-color-nav !important;
+        background-color: $dark-green !important;
         border: none;
         min-width: 100%;
-
-        &::after{
-            margin-right: 4px;
-        }
     }
     .dropdown-menu{
         text-align: center;
         min-width: 100%;
         a{
             &:hover{
-                background-color: rgba($color: $background-color-nav, $alpha: 0.5);
-                color: white;
+                background-color: rgba($color: $dark-green, $alpha: 0.5);
+                color: $white-color;
             }
         }
     }

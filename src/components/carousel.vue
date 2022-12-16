@@ -81,11 +81,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import '@/scss/common/varibles.scss';
+@import '@/scss/common/_varibles.scss';
 .carousel{
     max-height: 70vh;
     position: relative;
-    // padding: 0;
     overflow: hidden;
     .carousel-inner{
       max-height: 70vh;

@@ -1,6 +1,6 @@
 <template>
-    <div class="NotFound-container">
-        Not Found Page 404
+    <div class="container fw-bold fs-1 h-50 d-flex align-items-center justify-content-center">
+        {{$t('page-not-found-404')}}
     </div>
 </template>
 <script>

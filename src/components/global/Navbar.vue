@@ -73,7 +73,10 @@
           <span>0</span>
         </div>
         <div class="cart d-flex flex-column mr-1">
-          <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+          <span
+            class="icon"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></span>
           <span>0</span>
         </div>
       </div>
@@ -95,8 +98,8 @@ export default {
 <style lang="scss" scoped>
 @import "./../../scss/common/varibles.scss";
 nav {
-  background-color: $background-color-nav !important;
-  color: white !important;
+  background-color: $dark-green !important;
+  color: $white-color !important;
   .navbar-brand {
     margin: 0;
     padding: 0;
@@ -104,7 +107,7 @@ nav {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
-      font-size:small ;
+      font-size: small;
     }
     img {
       width: 25px;
@@ -123,9 +126,9 @@ nav {
       left: 0;
       right: 0;
       width: 100%;
-      background-color: rgba($color: $background-color-nav, $alpha: 0.7);
+      background-color: rgba($color: $dark-green, $alpha: 0.7);
     }
-    ul {
+    .navbar-nav {
       &::after {
         content: "";
         position: absolute;
@@ -134,12 +137,12 @@ nav {
         border-width: 20px;
         border-style: solid;
         border-color: transparent transparent
-          rgba($color: $background-color-nav, $alpha: 0.7) transparent;
+          rgba($color: $dark-green, $alpha: 0.7) transparent;
       }
     }
     li a.router-link-exact-active {
       font-weight: bold;
-      color: white !important;
+      color: $white-color !important;
     }
   }
   .notification,
@@ -148,7 +151,7 @@ nav {
     span {
       i {
         font-size: 30px;
-        @media (max-width: 567px){
+        @media (max-width: 567px) {
           font-size: 20px;
         }
       }
@@ -167,22 +170,21 @@ nav {
     button {
       background-color: transparent !important;
       border: none;
-      @media (max-width:567px) 
-      {
-        padding: 0;  
+      @media (max-width: 567px) {
+        padding: 0;
       }
-      &::after{
+      &::after {
         margin-right: 0.255em;
       }
     }
     ul {
       text-align: center;
-      left:50%;
+      left: 50%;
       transform: translateX(-50%);
       li {
         &:hover {
-          background-color: rgba($color: $background-color-nav, $alpha: 0.7);
-          color: white;
+          background-color: rgba($color: $dark-green, $alpha: 0.7);
+          color: $white-color;
           cursor: pointer;
         }
       }
