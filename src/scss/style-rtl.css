@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Mulish:wght@300;400;500;700;900&display=swap");
+[dir=rtl] input,
+[dir=rtl] button,
+[dir=rtl] select,
+[dir=rtl] textarea,
+[dir=rtl] optgroup,
+[dir=rtl] div,
+[dir=rtl] option,
+[dir=rtl] body,
+[dir=rtl] nav,
+[dir=rtl] span,
+[dir=rtl] section,
+[dir=rtl] a,
+[dir=rtl] li,
+[dir=rtl] label,
+[dir=rtl] table {
+  font-family: "Cairo", sans-serif;
+}
+[dir=rtl] body {
+  direction: rtl;
+  text-align: right;
+}/*# sourceMappingURL=style-rtl.css.map */

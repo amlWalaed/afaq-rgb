@@ -10,13 +10,13 @@
     "
   >
     <div
-      v-for="category in getCategories.slice(0, 6)"
+      v-for="category in products"
       :key="category.id"
       class="category"
       @click="clickCategory(category)"
     >
       <router-link
-        to="#"
+        to="/"
         class="
           d-flex
           flex-wrap
@@ -29,24 +29,10 @@
         {{ category }}
       </router-link>
     </div>
-    <div class="category more">
-      <router-link
-        to="#"
-        class="
-          more
-          d-flex
-          flex-wrap
-          justify-content-center
-          align-items-center
-          fw-bold
-        "
-        >{{ $t("more") }}</router-link
-      >
-    </div>
+    <slot name="more"></slot>
   </div>
 </template>
 <script>
-import { mapGetters } from "vuex";
 export default {
   name: "categories-component",
   data() {
@@ -54,9 +40,8 @@ export default {
       activeTab: null,
     };
   },
-  computed: {
-    ...mapGetters(["getCategories"]),
-  },
+  props:['products'],
+  
   methods: {
     clickCategory(category) {
       this.activeTab = category;
@@ -66,7 +51,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "./../../scss/common/_varibles.scss";
+@import "@/scss/common/_varibles.scss";
 .categories {
   gap: 10px;
 }
@@ -83,13 +68,7 @@ export default {
     justify-content: center;
     align-items: center;
     padding: 5px;
-    &.more {
-    background-color: rgba(
-      $color: $dark-green,
-      $alpha: 0.5
-    );
-    color: $white-color !important;
-  }
+    
     &:hover {
       background-color: $dark-green;
       color: $white-color !important;

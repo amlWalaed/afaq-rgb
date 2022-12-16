@@ -106,6 +106,9 @@ export default {
     }
     .carousel-indicators{
         z-index: 10;
+        .active{
+          background-color: $light-green;
+        }
     }
 }
 </style>

@@ -55,9 +55,7 @@ export default {
     ...mapGetters(['isLoading'])
   },
   components: { Carousel , Advertisement , Products , Loading },
-  beforeCreate(){
-    this.$store.dispatch("fetchData");
-  }
+ 
 };
 </script>
 <style lang="scss" scoped>

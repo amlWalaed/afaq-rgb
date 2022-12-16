@@ -13,6 +13,9 @@ export default {
     if(localStorage.getItem('lang') === "AR"){
         document.body.setAttribute('dir', 'rtl')
     }
+  },
+  beforeCreate(){
+    this.$store.dispatch("fetchData");
   }
 }
 </script>

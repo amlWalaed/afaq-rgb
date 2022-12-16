@@ -23,9 +23,9 @@
             <span><i class="fa-regular fa-eye"></i></span>
             <span><i class="fa-solid fa-cart-plus"></i></span>
           </div>
-          <div class=" p-1 mt-2">
-            <span class="text me-1 p-2">{{$t('try')}}</span>
-            <span class="text me-1 p-2">{{$t('more')}}</span>
+          <div class="text p-1 mt-2">
+            <span class="p-1 w-50">{{$t('try')}}</span>
+            <span class="p-1 w-50">{{$t('more')}}</span>
           </div>
         </div>
         <img :src="product.thumbnail" class="card-img-top" />
@@ -95,6 +95,25 @@ export default {
           border-radius: $border-radius;
           background-color: $white-color ;
           color:$dark-green;
+          display: table-row;
+          position: relative;
+          width:100px;
+          &::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background-color: $dark-green;
+          }
+          span{
+            display: table-cell;
+            &.hover{
+              background-color: darken($white-color, 15%) !important; 
+            }
+          }
 
         }
       }
