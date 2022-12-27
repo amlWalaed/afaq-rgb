@@ -9,6 +9,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import '../scss/common/varibles.scss'
+@import '../scss/common/varibles.scss';
+div{
+    height: 300px !important;
+}
 
 </style>

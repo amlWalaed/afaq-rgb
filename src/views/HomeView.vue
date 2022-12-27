@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/carousel";
 import Advertisement from "@/components/Advertisement.vue";
 import Products from "@/components/Home/ProductListing";
 import Loading from "@/components/Loading.vue";
